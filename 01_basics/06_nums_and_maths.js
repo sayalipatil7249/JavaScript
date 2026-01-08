@@ -19,7 +19,7 @@ const hundreds = 1000000
 console.log(hundreds.toLocaleString());  
 console.log(hundreds.toLocaleString('en-IN'))   // output => 10,00,000  it gives the output by indian style
 
-console.log()
+console.log();
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 console.log("*********************** Maths *********************")
