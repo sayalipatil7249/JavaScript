@@ -55,7 +55,7 @@ if(true){
 console.log(`Function addone() is called : ${addone(5)}`);   //here it doesn't gives error even if we call it before initialization
 function addone(num){
     return num + 1;
-}
+} 
 
 //but below the function is declared and store it inside one variable so this type of function cannot accessible/call before the initialization 
 //addTwo();       //here if we call before initialization then it gives error   ...so we have to call it after initialization
