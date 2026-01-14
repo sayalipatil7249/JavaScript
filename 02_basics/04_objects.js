@@ -131,3 +131,10 @@ console.log();
 //     "coursename": "JS in hindi",
 //     "price": "free"
 // }                                 //in json format key and its value both are in string format ..if we dont take the keys in string format then it will cause the error
+
+//API's are also come in array format where which conatins multiple objects
+[
+    {},
+    {},
+    {}
+]

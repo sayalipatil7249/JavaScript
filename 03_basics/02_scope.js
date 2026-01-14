@@ -57,7 +57,7 @@ function addone(num){
     return num + 1;
 } 
 
-//but below the function is declared and store it inside one variable so this type of function cannot accessible/call before the initialization 
+//2]but below the function is declared and store it inside one variable so this type of function cannot accessible/call before the initialization 
 //addTwo();       //here if we call before initialization then it gives error   ...so we have to call it after initialization
 const addTwo = function(num){
     return num + 2;

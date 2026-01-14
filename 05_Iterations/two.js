@@ -14,7 +14,6 @@ while(arr < myArray.length){
 }
 console.log();
 
-
 //do-while loop
 let score = 1;
 console.log("Do-While loop");
