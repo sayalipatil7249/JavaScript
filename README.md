@@ -1,2 +1,2 @@
 # JavaScript
-A code repo for javascript by chai aur code
+A code repo for learning javascript by chai aur code
