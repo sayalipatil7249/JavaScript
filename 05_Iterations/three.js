@@ -48,8 +48,10 @@ for (const [key , value] of map) {
 console.log();
 
 //for of loop doesn't works on objects ... it works on maps but not on objects
+//so for objects we use forin loop
 
 
+//for in loop is not apply on map
 
 
 
