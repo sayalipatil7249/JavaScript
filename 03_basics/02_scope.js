@@ -11,7 +11,7 @@ if(true){
 }
 
 console.log(a);
-// console.log(b);
+//console.log(b);
 console.log(c);     //it prints value inside the block not prints value outside the class
 
 //let and const both have block scope ..if it is initialized inside block then it not accessible outside the class

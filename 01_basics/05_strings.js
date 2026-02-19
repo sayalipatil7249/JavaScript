@@ -13,6 +13,14 @@ console.log()
 const gameName = new String("Sayali-SP-com")
 console.log(gameName[0])   //it gives value at index 0
 console.log(gameName.toUpperCase())    //here there is no chanege in original string
+//check is there any change in original string
+console.log(`Check is there any changes in original string : ${gameName}`); // no there is no change ..it will print original string
+//but if i store that operation into variable then it gives new string
+const g1 = gameName.toUpperCase();
+console.log(`String after storing it into variable : ${g1}`);
+
+
+
 
 //to find prototype use following
 console.log(gameName.__proto__);   //it returns {} it means the string is object 

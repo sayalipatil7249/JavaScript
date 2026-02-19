@@ -10,6 +10,11 @@ let userEmail;
 
 const id = Symbol('123')   // it determines unique values
 const anotherId = Symbol('123')
+console.log(id);
+console.log(anotherId);
+
+
+
 
 console.log(id=== anotherId)   // output is false because return values are not same
 

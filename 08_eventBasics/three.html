@@ -1,0 +1,44 @@
+<!--
+    Asynchronous :
+        i)The asynchronous nature of JavaScript allows it to perform long-running tasks like API calls or timers without blocking the main thread, ensuring smooth and responsive execution of code.
+        ii)JavaScript does not wait for time-consuming tasks (like API calls, timers, file loading).
+It moves on and comes back later when those tasks are done.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Sayali</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Sayali");
+        
+    // },2000)
+
+    const saySayali = function(){
+        console.log("Sayali");
+    }
+
+    setTimeout(saySayali,2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Hello Sayu"
+    }
+
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+        
+    })
+</script>
+</html>

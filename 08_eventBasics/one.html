@@ -1,0 +1,87 @@
+<!--Events-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+
+<script>
+    //     document.getElementById('owl').onclick = function(){
+    //     alert('owl is clicked')
+    // } 
+    
+    //the above approch is very old ..hence we use the following event listener approch
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("Clicked inside the url");
+    },false)
+
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    },false)
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("Google Clicked");
+
+    }, false)
+
+
+    //attachEvent()
+    //jQuery - on
+
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e);
+    //     console.log(e.target);
+    //     console.log(e.target.parentNode);
+    //     //to remove
+    //     console.log(e.target.tagName);
+    //     if(e.target.tagName == 'IMG'){
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode; 
+    //         removeIt.remove();
+    //     }
+    //     // removeIt.parentNode.removeChild(removeIt);
+    // })
+</script>
+</html>
+
+
+<!--
+    i)all the events in javascript are runs sequentially(becuase javascript is sequential run language)
+    ii)eventListener not only gives onclick functionalities but it also gives propagation functionality
+    iii)eventlistener is more powerful , it can listen all types of events like keyboard events, mouse events , drag and drop events
+    iv)Syntax => addEventListener('event_name',function(event_object){},false)
+--> 
+
+<!--
+    Learn consepts of following by doing inspect and see at console
+    i)event type , timestamp , defaultPrevented
+    ii)target,toElement,srcElement,currentTarget,
+    iii)clientX,clientY,screenX,screenY
+    iv)altkey,ctrlkey,shiftKey , keycode
+-->
+
+<!--
+    Event Propagation(tracking of events from inside elements(i.e. html tags) to outside) : 
+    1)Event Bubbuling(it is default propagation) , 
+    ii)Event capturing
+    
+-->
